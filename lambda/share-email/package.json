@@ -1,0 +1,13 @@
+{
+  "name": "share-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "zip": "zip -r -X shareEmail.zip {*.js,package.json,node_modules,.env}"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.6.7"
+  }
+}

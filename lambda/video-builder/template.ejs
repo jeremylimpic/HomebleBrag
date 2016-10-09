@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Homeblebrag</title>
+    <link rel="stylesheet" href="//npmcdn.com/normalize-css@2.3.1/normalize.css" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+
+    <meta property="og:url" content="<%= url %>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Homeblebrag" />
+    <meta property="og:description" content="Are you too humble to brag about your new home? Let Elizabeth Banks do it for you!" />
+    <meta property="og:image" content="<%= previewImage %>" />
+    <meta property="og:video" content="<%= videoUrl %>" />
+    <meta property="og:video:secure_url" content="<%= videoUrl %>" />
+    <meta property="og:video:type" content="video/mp4" />
+    <meta property="og:video:width" content="694" />
+    <meta property="og:video:height" content="390" />
+
+    <meta property="twitter:card" content="player" />
+    <meta property="twitter:title" content="Homeblebrag" />
+    <meta property="twitter:site" content="realtordotcom" />
+    <meta property="twitter:description" content="Are you too humble to brag about your new home? Let Elizabeth Banks do it for you!" />
+    <meta property="twitter:player" content="<%= playerUrl %>" />
+    <meta property="twitter:player:width" content="694" />
+    <meta property="twitter:player:height" content="390" />
+    <meta property="twitter:image" content="<%= previewImage %>" />
+    <meta property="twitter:player:stream" content="<%= videoUrl %>" />
+    <meta property="twitter:player:stream:content_type" content="video/mp4" />
+</head>
+<body>
+    <div id="main">
+        <div>
+            <div id="header">
+                <h1>
+                    <span class="hash">#</span>
+                    <span class="highlight">homeble</span>
+                    <span>brag</span>
+                </h1>
+                <p>
+                    <span>Are you too humble to brag about your new home?</span><br>
+                    <span>Let Elizabeth Banks do it for you!</span>
+                </p>
+                <div id="preview-video">
+                    <video src="output.mp4" height="390" width="694" preload="auto" autoPlay="autoplay" autostart="autostart"></video>
+                    <a className="skip border-button" href="#"><span class="inner">Make Your Own!</span></a>
+                </div>
+
+                <div className="continue-row">
+                    <a href="#" class="make-your-own expanded">
+                        <img className="bubbles" src="../img/makeyourown-sayings.gif" alt="" />
+                        <span className="border-button"><i className="inner">Make your own</i></span>
+                    </a>
+                    <a className="play-again border-button" href="#"><span className="inner">Play Again</span></a>
+                </div>
+            </div>
+            <div id="bottom"></div>
+            <img src="<%= streetViewImg %>" width="1" height="1" alt="">
+        </div>
+    </div>
+</body>
+</html>

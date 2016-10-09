@@ -1,0 +1,13 @@
+{
+  "name": "validate-address",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "zip": "zip -r -X validateAddress.zip {*.js,package.json,node_modules,.env}"
+  },
+  "dependencies": {
+    "request": "^2.75.0"
+  }
+}
